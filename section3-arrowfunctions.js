@@ -53,24 +53,19 @@ console.log(isEven(4));
 // In summary when code is on one line return can be omitted
 // One line is more readable however multiple lines of code is easier to understand what is going on
 
-
-
-
-
 // Question 6
-
 
 //original function
 function isEven(number) {
-    return number %2===0;
+  return number % 2 === 0;
 }
 //arrow function
-const isEvenArrow2=number=>number=>number%2===0;
+const isEvenArrow2 = (number) => (number) => number % 2 === 0;
 //arrow functionwith arrays
-const numbers=[1,2,3,4,5,6,7,8,9,10]
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //even numbers
-const evens=numbers.filter(number=>number %2===0);
+const evens = numbers.filter((number) => number % 2 === 0);
 //doubled numbers
-const doubled=numbers.map(number=>number*2)
+const doubled = numbers.map((number) => number * 2);
 //sum of numbers
-const sum=numbers.reduce((total,number)=>total + number,o);
+const sum = numbers.reduce((total, number) => total + number, 0);
